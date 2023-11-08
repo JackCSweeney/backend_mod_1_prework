@@ -27,32 +27,29 @@
 # 
 
 # class CeasarCipher
+#     attr_accessor :string
 
-    
-   
 #     def initialize(string)
-#         @string = string
-#         @num = 0
+#         @string = string 
 #     end
 
-#     def assign_value
-#         letters_array = ('a'..'z').to_a
-#         numbers_array = (1..26).to_a
-#         alphabet_hash = Hash[letters_array.zip(numbers_array)]
-#         @string.downcase.chars.each do |letter|
-#             puts alphabet_hash[letter]
+#     def encode(num)
+#         @string = @string.upcase.chars
+#         puts @string.each do |chars|
+#             chars.succ
 #         end
 #     end
-
-#     def change_value
-#         alphabet_hash
 # end
+
+
 
 # message = CeasarCipher.new("Hello World")
 
-# message.assign_value
+# puts message.encode(5)
 
-# Method version. Currently prints it out without any spacing in the words that get changed by the cipher. Will attempt to 
+
+
+# Method version: Currently prints it out without any spacing in the words that get changed by the cipher. Will attempt to 
 # refactor to make it keep any spaces that are input with the original string
 
 def encode(string, num)
